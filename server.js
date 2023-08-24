@@ -5,7 +5,6 @@ const app = express();
 
 const cors = require("cors"); // Import the cors package
 
-// ... (other code) ...
 
 app.use(cors()); // Use cors middleware to enable CORS
 
