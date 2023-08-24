@@ -1,0 +1,29 @@
+/* ViewExpenses.css */
+
+.expenses-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Add spacing between rows */
+    margin-top: 20px;
+  }
+  
+  .expenses-table th,
+  .expenses-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .expenses-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .expenses-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .expenses-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
