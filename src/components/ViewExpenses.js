@@ -20,11 +20,15 @@ const ViewExpenses = () => {
 
   return (
     <div>
-      <h2>Expenses</h2>
-      <table className="expense-table">
+      <div className="expense-header">
+        <h2>Expenses</h2> 
+      </div>
+     
+      <table className="expenses-table">
         <thead>
           <tr>
-            <th>Date</th>
+            <th>Date
+            </th>
             <th>Description</th>
             <th>Amount</th>
           </tr>
@@ -32,7 +36,7 @@ const ViewExpenses = () => {
         <tbody>
           {expenses.map((expense) => (
             <tr key={expense.expenseId}>
-              <td>{new Date(expense.expense_date).toLocaleDateString()}</td>
+              <td>{new Intl.DateTimeFormat(['ban', 'id']).format(new Date(expense.expense_date))}</td>
               <td>{expense.description}</td>
               <td>Rs{expense.amount}</td>
             </tr>

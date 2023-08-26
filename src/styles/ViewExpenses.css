@@ -1,5 +1,11 @@
 /* ViewExpenses.css */
 
+.expense-header{
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
 .expenses-table {
     width: 100%;
     border-collapse: separate;

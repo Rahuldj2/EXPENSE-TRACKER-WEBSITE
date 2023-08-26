@@ -10,7 +10,7 @@ const AddExpenseForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/addExpense", { date, description, amount });
+      await axios.post("http://localhost:5000/api/addExpense/", { date, description, amount });
       // Clear input fields
       setDate("");
       setDescription("");
